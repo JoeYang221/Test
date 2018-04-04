@@ -421,6 +421,7 @@ def main(api_endpoint, credentials, project_id,
         # When the once flag is set, don't wait for a trigger. Otherwise, wait.
         wait_for_user_trigger = not once
         while True:
+            print("[joe debug]")
             if wait_for_user_trigger:
                 click.pause(info='Press Enter to send a new request...')
             continue_conversation = assistant.assist()
